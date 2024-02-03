@@ -1,0 +1,62 @@
+@charset "utf-8";
+body {
+    background-color: #87CEEB; /* 水色の背景 */
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+
+#quiz-container {
+    max-width: 600px;
+    margin: 100px auto 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+#start-button {
+    background-color: #008CBA; /* ボタンの背景色 */
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#start-button:hover {
+    background-color: #005F79; /* ホバー時の背景色 */
+}
+
+
+header{
+    background-color: rgba(255, 255, 255, 0);
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 80px;
+    z-index: 10;
+    transition: 1.0s ;
+}
+
+header:hover{
+    background-color: rgb(145, 142, 142);
+}
+
+.menu{
+    color: rgb(0, 0, 0);
+    line-height: 60px;
+    padding: 10px;
+    text-decoration: none; 
+}
+
+.titlemenu{
+    float: left;
+    width: 100px;
+    text-align: center;
+    height: 60px;
+}

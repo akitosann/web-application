@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>リンク付きフォーム</title>
+</head>
+<body>
+    <h1>機能</h1>
+    
+    <form>
+        <label for="functionSelect">機能を選択：</label>
+        <select id="functionSelect" name="functionSelect">
+            <option value="home">クイズ</option>
+            <option value="location">近い医療施設検索</option>
+            <option value="news">３</option>
+        </select>
+        <input type="button" value="移動" onclick="goToFunction()">
+    </form>
+    
+    <script>
+        function goToFunction() {
+            var selectedFunction = document.getElementById("functionSelect").value;
+            
+            // 選択された機能にリダイレクト
+            switch (selectedFunction) {
+                case "home":
+                    window.location.href = "quiz.html"; // ホームページへのリンク
+                    break;
+                case "location":
+                    window.location.href = "location.html"; // お問い合わせページへのリンク
+                    break;
+                case "news":
+                    window.location.href = "news.html"; // お知らせページへのリンク
+                    break;
+                default:
+                    alert("無効な選択です。");
+                    break;
+            }
+        }
+    </script>
+</body>
+</html>

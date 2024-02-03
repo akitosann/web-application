@@ -1,0 +1,159 @@
+@charset "utf-8";
+body {
+    background-color: #29bba3; 
+    font-family: Arial, sans-serif;
+    text-align: center;
+
+}
+
+#quiz-container{
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+#button-area{
+    display: flex;
+    justify-content: center;
+}
+
+
+#image1{
+    max-width: 300px;
+    max-height: 250px;
+    justify-content: center;
+}
+
+#image2{
+    max-width: 300px;
+    max-height: 250px;
+    justify-content: center;
+}
+
+#image3{
+    max-width: 300px;
+    max-height: 250px;
+    justify-content: center;
+}
+
+question{
+    font-size: 80px;
+}
+
+#facility{
+    font-size: 50px;
+}
+
+#bottom-container{
+    display: flex;
+}
+
+.button{
+    width: 350px;
+    height: 220px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #00e1f1;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    text-align:center;
+}
+
+#answer-container{
+    max-width: 800px;
+    height: 220px;
+    padding: 40px;
+    border-radius: 20px;
+    margin-right: auto;
+}
+
+#next-button{
+    width: 200px;
+    height: 500px;
+    border-radius: 20px;
+
+} 
+
+#nbutton[disabled] {
+    background-color: rgb(177, 46, 159); /* 無効なボタンの背景色 */
+    cursor: not-allowed; /* マウスカーソルを変更 */
+    pointer-events: none;
+    border-radius: 20px;
+
+}
+
+#retry-button{
+    width: 200px;
+    height: 500px;
+    border-radius: 20px;
+
+} 
+#nbutton{
+    position: absolute;
+    width: 200px;
+    height: 120px;
+    background-color: #eb3645;
+    bottom:30px;
+    right:50px;
+    font-size: 60px;
+}
+
+#tbutton{
+    position: absolute;
+    width: 200px;
+    height: 120px;
+    background-color: #eb3645;
+    bottom:30px;
+    right:50px;
+    font-size: 60px;
+}
+
+#rbutton[disabled] {
+    background-color: rgb(130, 194, 154); /* 無効なボタンの背景色 */
+    cursor: not-allowed; /* マウスカーソルを変更 */
+    pointer-events: none;
+    border-radius: 20px;
+
+}
+
+#rbutton{
+    position: absolute;
+    width: 200px;
+    height: 120px;
+    background-color: #30bb57;
+    bottom:230px;
+    right:50px;
+    font-size: 50px;
+}
+
+.button:hover {
+    background-color: #005F79; /* ホバー時の背景色 */
+}
+
+.button[disabled] {
+    background-color: rgb(177, 46, 159); /* 無効なボタンの背景色 */
+    cursor: not-allowed; /* マウスカーソルを変更 */
+    pointer-events: none;
+}
+
+#message {
+    font-size: 50px;
+    margin-top: 10px;
+    margin-bottom: -40px;
+    text-align: left; 
+}
+
+#message2 {
+    font-size: 50px;
+    margin-top: 30px;
+    text-align: left; 
+}
+
+#message3 {
+    font-size: 50px;
+    margin-top: 30px;
+    text-align: left; 
+}

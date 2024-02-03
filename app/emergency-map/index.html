@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <title>Add Map</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <!-- Community Geocoder API (free) -->
+    <script src="https://cdn.geolonia.com/community-geocoder.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <script type="module" src="./index.js"></script>
+</head>
+
+<body>
+    <header>
+        <a class="titlemenu menu" href="http://fecsisv.fecs.eng.u-fukui.ac.jp/~exp33-23-04/">トップページ</a>
+    </header>
+    <!--The div element for the map -->
+    <div id="map"></div>
+    <div id="footer-container">
+        <!-- マーカーの表示・非表示が出来るトグルスイッチ -->
+        <label class="toggle-button">
+            <b>救急医療機関</b>
+            <input type="checkbox" id="showHospitalMarkers" checked>
+        </label>
+        <label class="toggle-button">
+            <b>AED(公共機関)</b>
+            <input type="checkbox" id="showAEDMarkers">
+        </label>
+        <label class="toggle-button">
+            <b>AED(コンビニ)</b>
+            <input type="checkbox" id="showAEDMarkers">
+        </label>
+    </div>
+
+
+
+
+    <!-- prettier-ignore -->
+    <script>(g => { var h, a, k, p = "The Google Maps JavaScript API", c = "google", l = "importLibrary", q = "__ib__", m = document, b = window; b = b[c] || (b[c] = {}); var d = b.maps || (b.maps = {}), r = new Set, e = new URLSearchParams, u = () => h || (h = new Promise(async (f, n) => { await (a = m.createElement("script")); e.set("libraries", [...r] + ""); for (k in g) e.set(k.replace(/[A-Z]/g, t => "_" + t[0].toLowerCase()), g[k]); e.set("callback", c + ".maps." + q); a.src = `https://maps.${c}apis.com/maps/api/js?` + e; d[q] = f; a.onerror = () => h = n(Error(p + " could not load.")); a.nonce = m.querySelector("script[nonce]")?.nonce || ""; m.head.append(a) })); d[l] ? console.warn(p + " only loads once. Ignoring:", g) : d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n)) })
+            ({ key: "AIzaSyDWOscm7h610EOSZ26dhH7EOWnVsF54yrQ", v: "beta" });</script>
+</body>
+
+</html>
